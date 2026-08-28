@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danh sách công việc</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>📝 Danh sách công việc</h1>
+
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="Nhập công việc cần làm..."
+        autocomplete="off"
+      />
+      <button type="submit">Thêm</button>
+    </form>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Tất cả</button>
+      <button class="filter-btn" data-filter="active">Chưa xong</button>
+      <button class="filter-btn" data-filter="completed">Đã xong</button>
+    </div>
+
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <div class="footer">
+      <span id="items-left">0 công việc còn lại</span>
+      <button id="clear-completed">Xóa việc đã xong</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
